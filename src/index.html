@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churrascometro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Roboto:wght@300&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img src="../assets/images/tabua-de-carne.png" class="tabua-bg" alt="">
+    <div class="main-container">
+        <h1 id="main-title">Churrascometro</h1>
+        <img id="salsage" src="../assets/images/salsicha.svg" alt="">
+
+        <div class="container-top">
+            <div class="inputs">
+                <div class="input-container">
+                <label for="adults">ADULTOS</label>
+                <input type="number" name="adults" id="adults">
+                </div>
+
+                <div class="input-container">
+                <label for="kids">CRIANÇAS</label>
+                <input type="number" name="kids" id="kids">
+                </div>
+
+                <div class="input-container">
+                <label for="duration">DURAÇÃO</label>
+                <input type="number" name="duration" id="duration" placeholder="(h)">
+                </div>
+            </div>
+            <button id="calc-button">Calcular</button>
+        </div>
+
+        <div class="results-container">
+            <div id="result" class="result-meat">
+                <h1>Carne</h1>
+                <img src="../assets/images/carne.svg" alt="Ícone de carne">
+                <p id="qtd-meat"></p>
+            </div>
+
+            <div id="result" class="result-beer">
+                <h1>Cerveja</h1>
+                <img src="../assets/images/cerveja.svg" alt="Ícone de carne">
+                <p id="qtd-beer"></p>
+            </div>
+
+            <div id="result" class="result-soda">
+                <h1>Refri</h1>
+                <img src="../assets/images/refrigerante.svg" alt="Ícone de carne">
+                <p id="qtd-soda"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
